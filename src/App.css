@@ -162,13 +162,13 @@ padding: 0.3em;
 
 .divBiggerPageList{
   display: grid;
-  grid-template-rows: 20% 0% 50%;
+  grid-template-columns:  30% 30%;
 }
 
 
 .divPageList{
   display: grid;
- grid-template-columns: 30% 0% 40%;
+ grid-template-columns: 30%  40%;
       justify-content: center;
 
 }
@@ -192,10 +192,7 @@ margin-top: 5em;
    background: red;
    color: white;
    float: bottom;
- position: relative;
-  top: -120%;
-  left: -25%;
-  transform: translate(-50%, -50%);
+
 
 }
 
@@ -311,10 +308,17 @@ nav div ul a{
 @media  (max-width: 75em) {
   .divPageList{
   display: grid;
- grid-template-columns: 10% 0% 60%;
+ grid-template-columns: 10%  20%;
       justify-content: center;
 
  }
+
+.btnDeleteAlls{
+   position: absolute;
+  top: +40%;
+  left: +5%;
+  transform: translate(-50%, -50%);
+}
 
  nav div {
     position: relative;
@@ -329,7 +333,7 @@ nav div ul a{
 @media  (max-width: 45em) {
   .divPageList{
   display: grid;
- grid-template-columns: 30% 0% 60%;
+ grid-template-columns: 30% 60%;
       justify-content: center;
 
  }

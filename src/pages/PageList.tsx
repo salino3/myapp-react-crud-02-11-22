@@ -30,13 +30,12 @@ const PageList = () => {
   return (
     <>
       <div className="divBiggerPageList">
-        <div></div>
-        <div>
-          <button onClick={() => deleteAlls()} className="btnDeleteAlls">
-            <b>Delete Alls</b>
-          </button>
-        </div>
         <div className="divPageList">
+          <div>
+            <button onClick={() => deleteAlls()} className="btnDeleteAlls">
+              <b>Delete Alls</b>
+            </button>
+          </div>
           <form className="myFormList" onSubmit={handleSubmit}>
             <br />
             <input
@@ -54,17 +53,13 @@ const PageList = () => {
               ref={inputRef2}
             />{" "}
             <br />
-            <button
-        
-              className="btnAdd1"
-              type="submit"
-            >
+            <button className="btnAdd1" type="submit">
               <b>Add task</b>
             </button>
           </form>
-          <div>
-            <Card />
-          </div>
+        </div>
+        <div>
+          <Card />
         </div>
       </div>
     </>
@@ -75,7 +70,7 @@ export default PageList
 
 
 
-
+// style={{paddingLeft:"10em"}}
 
 
 
